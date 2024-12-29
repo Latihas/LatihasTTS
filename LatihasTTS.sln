@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatihasTTS", "LatihasTTS\LatihasTTS.csproj", "{30A08F47-3DBD-4822-BCD1-C46593656C69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatihasTTS.Core", "LatihasTTS.Core\LatihasTTS.Core.csproj", "{ABD70A4A-A291-412F-A97D-59116CAC9E3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30A08F47-3DBD-4822-BCD1-C46593656C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30A08F47-3DBD-4822-BCD1-C46593656C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30A08F47-3DBD-4822-BCD1-C46593656C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30A08F47-3DBD-4822-BCD1-C46593656C69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD70A4A-A291-412F-A97D-59116CAC9E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD70A4A-A291-412F-A97D-59116CAC9E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD70A4A-A291-412F-A97D-59116CAC9E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD70A4A-A291-412F-A97D-59116CAC9E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
