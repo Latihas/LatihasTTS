@@ -11,11 +11,14 @@ namespace LatihasTTS;
 public class Proxy : IActPluginV1 {
 	private Assembly Core;
 	private dynamic RealPlugin;
+	[DllImport("kernel32.dll", SetLastError = true)]
+	private static extern IntPtr LoadLibrary(string lpFileName);
 
 	public void InitPlugin(TabPage pluginScreenSpace, Label pluginStatusText) {
 		var text = Path.Combine(ActGlobals.oFormActMain.PluginGetSelfData(this).pluginFile.DirectoryName!, "libs");
 		Environment.SetEnvironmentVariable("PATH", Environment.GetEnvironmentVariable("PATH") + ";" + text);
 		Core = Load(Path.Combine(text, "LatihasTTS.Core.dll"));
+		LoadLibrary(Path.Combine(text, "onnxruntime.dll"));
 		RealPlugin = Core.CreateInstance("LatihasTTS.Core.Main");
 		RealPlugin!.InitPlugin(pluginScreenSpace, pluginStatusText);
 		RealPlugin.InitROOTDIR(ActGlobals.oFormActMain.PluginGetSelfData(this).pluginFile.DirectoryName);

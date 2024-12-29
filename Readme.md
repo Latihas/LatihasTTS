@@ -32,8 +32,6 @@ $(ActRoot)/
 
 已验证的环境：`呆萌ACT`，`鲇鱼精1.3.5.3`
 
-onnxruntime理论上会在Windows上自动安装，如果没有，请将`LatihasTTS/libs/onnxruntime.dll`复制到`$(ActRoot)/DLibs/onnxruntime.dll`
-
 ## 二次开发方法
 
 Github有大小限制,a.ort和v.ort不在仓库中。
